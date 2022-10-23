@@ -7,6 +7,7 @@ import NewPost from "./NewPost"
 import PostPage from "./PostPage"
 import About from "./About"
 import Missing from "./Missing"
+import EditPost from './EditPost'
 
 import api from "./Api/posts"
 import { format } from 'date-fns'
@@ -20,6 +21,8 @@ function App() {
   const [searchResults, setSearchResults] = useState([])
   const [postTitle, setPostTitle] = useState('')
   const [postBody, setPostBody] = useState('')
+  const [editTitle, setEditTitle] = useState('')
+  const [editBody, setEditBody] = useState('')
   const navigate = useNavigate()
 
   //Fetch posts at load time
@@ -73,16 +76,29 @@ function App() {
     }
   }
 
+  const handleEdit = async (id) => {
+    const datetime = format(new Date(), 'MMMM dd, yyyy pp')
+    const updatedPost = {id, title: editTitle, datetime, body: editBody}
+    try {
+      const response = await api.put(`/posts/${id}`, updatedPost)
+      setPosts(posts.map(post => post.id === id ? { ...response.data } : post))
+      setEditTitle('')
+      setEditBody('')
+      navigate("/")
+    } catch (err) {
+      console.log(`Error: ${err.message}`)
+    }
+  }
+
   const handleDelete = async (id) => {
-    const postList = posts.filter(post => post.id !== id)
     try {
       await api.delete(`/posts/${id}`)
+      const postList = posts.filter(post => post.id !== id)
       setPosts(postList)
       navigate("/")
     } catch (err) {
       console.log(`Error: ${err.message}`)
     }
-
   }
   return (
     <div className="App">
@@ -98,6 +114,16 @@ function App() {
             postBody={postBody}
             setPostBody={setPostBody}
           />} exact 
+        />
+        <Route path="/edit/:id" element={
+          <EditPost 
+            posts={posts}
+            handleEdit={handleEdit} 
+            editTitle={editTitle} 
+            setEditTitle={setEditTitle}
+            editBody={editBody}
+            setEditBody={setEditBody}
+          />} 
         />
         <Route path="/post/:id" element={<PostPage posts={posts} handleDelete={handleDelete} />} exact />
         <Route path="/about" element={<About />} exact />

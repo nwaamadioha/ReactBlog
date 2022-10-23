@@ -2,33 +2,27 @@
   "posts": [
     {
       "id": 1,
-      "title": "My First Post",
-      "datetime": "July 01, 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. That is to say that i don't give a rat ass about anything i've written here."
+      "title": "First Post",
+      "datetime": "October 23, 2022 10:37:43 PM",
+      "body": "Here goes my first post guys"
     },
     {
       "id": 2,
-      "title": "My Second Post",
-      "datetime": "July 01, 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. That is to say that i don't give a rat ass about anything i've written here."
+      "title": "Second Post",
+      "datetime": "October 23, 2022 10:38:07 PM",
+      "body": "Still trying to get things right guys"
     },
     {
       "id": 3,
-      "title": "My Third Post",
-      "datetime": "July 01, 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. That is to say that i don't give a rat ass about anything i've written here."
+      "title": "Third Post",
+      "datetime": "October 23, 2022 10:38:32 PM",
+      "body": "It seems things are looking good my guys"
     },
     {
       "id": 4,
       "title": "My Fourth Post",
-      "datetime": "July 01, 2021 11:17:36 AM",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. That is to say that i don't give a rat ass about anything i've written here."
-    },
-    {
-      "id": 6,
-      "title": "Audacity",
-      "datetime": "October 22, 2022 11:14:54 PM",
-      "body": "It requires audacity to push forward"
+      "datetime": "October 23, 2022 11:30:27 PM",
+      "body": "That is good keep it up ok yes"
     }
   ]
 }
