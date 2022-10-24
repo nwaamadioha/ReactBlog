@@ -1,8 +1,14 @@
+import { FaLaptop, FaTabletAlt, FaMobileAlt } from "react-icons/fa"
 
-const Header = ({ title }) => {
+const Header = ({ title, width }) => {
   return (
     <header className="Header">
       <h1>{title}</h1>
+      {
+        width < 760 ? <FaMobileAlt />
+          : width < 992 ? <FaTabletAlt />
+              : <FaLaptop />
+      }
     </header>
   )
 }
