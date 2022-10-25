@@ -23,6 +23,18 @@
       "title": "My Fourth Post",
       "datetime": "October 24, 2022 2:11:52 AM",
       "body": "That is good keep it up."
+    },
+    {
+      "id": 7,
+      "title": "New Prime minister",
+      "datetime": "October 25, 2022 1:13:19 PM",
+      "body": "Rashi Sunak is the first Prime Minister to be appointed by the new King Charles the 3rd, innit?\nHe is also the first PM of Hindu origin"
+    },
+    {
+      "id": 8,
+      "title": "Test Post",
+      "datetime": "October 25, 2022 1:38:15 PM",
+      "body": "Just like that and now"
     }
   ]
 }
