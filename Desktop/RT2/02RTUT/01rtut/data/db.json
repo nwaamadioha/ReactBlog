@@ -27,14 +27,20 @@
     {
       "id": 7,
       "title": "New Prime minister",
-      "datetime": "October 25, 2022 1:13:19 PM",
-      "body": "Rashi Sunak is the first Prime Minister to be appointed by the new King Charles the 3rd, innit?\nHe is also the first PM of Hindu origin"
+      "datetime": "October 25, 2022 2:15:36 PM",
+      "body": "Rashi Sunak is the first Prime Minister to be appointed by the new King Charles the 3rd, innit?\nHe is also the first PM of Hindu origin."
     },
     {
       "id": 8,
-      "title": "Test Post",
-      "datetime": "October 25, 2022 1:38:15 PM",
-      "body": "Just like that and now"
+      "title": "Redux Easy Peasy",
+      "datetime": "October 26, 2022 6:02:36 PM",
+      "body": "I'm still testing this Redux stuff out to see how it works."
+    },
+    {
+      "id": 9,
+      "title": "My baby Nse",
+      "datetime": "October 26, 2022 11:47:39 PM",
+      "body": "Has a big head. I found out after a while"
     }
   ]
 }
