@@ -24,11 +24,11 @@ const EditPost = () => {
     }
   }, [post, setEditTitle, setEditBody])
 
-  const handleEdit = async (id) => {
+  const handleEdit = (id) => {
     const datetime = format(new Date(), 'MMMM dd, yyyy pp')
     const updatedPost = { id, title: editTitle, datetime, body: editBody }
     editPost(updatedPost)
-    navigate("/")
+    navigate(`/post/${id}`)
 
   }
   return (
@@ -52,7 +52,7 @@ const EditPost = () => {
               value={editBody}
               onChange={(e) => setEditBody(e.target.value)}
             />
-            <button type="submit" onClick={() => handleEdit(post.id)}>Submit</button>
+            <button type="button" onClick={() => handleEdit(post.id)}>Submit</button>
           </form>
         </>
       }
